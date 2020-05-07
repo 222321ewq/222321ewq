@@ -1,0 +1,54 @@
+.serviceArea{
+    background: black;
+    padding: 50px 0 20px;
+    position: relative;
+    margin-top: -10px;
+    .serviceItem{
+        overflow: hidden;
+        margin-bottom: 30px;
+        background: #fff;
+        @media (max-width:1200px) {
+            height: 90px;
+        }
+        .serviceIcon{
+            background: rgb(145, 118, 30);
+            height: 100px;
+            max-width: 100px;
+            width: 95px;
+            text-align: center;
+            float: left;
+            @media (max-width:1200px) {
+                height: 90px;
+                width: 90px;
+            }
+            i{
+                color: white;
+                
+            }
+        }
+        &:hover{
+            .serviceIcon{
+                i{
+                    color: black;
+                }
+            }
+        }
+        .serviceText{
+            overflow: hidden;
+            padding: 15px 10px;
+            span{
+                color: rgb(145, 118, 30);
+                font-size: 18px;
+                font-family: 'Gill Sans';
+            }
+            h3{
+                font-size: 28px;
+                font-family: 'Gill Sans';
+                color: black;
+                @media (max-width:1200px) {
+                    font-size: 22px;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,72 @@
+.aboutArea{
+    padding: 100px 0px 100px;
+    .aboutImageWrap{
+        margin: 0px 20px 0px 20px;
+        position: relative;
+        z-index: 1;
+        @media (max-width:768px) {
+            margin-bottom: 40px;
+            margin-right: 0;
+        }
+        img{
+            @media (max-width:768px) {
+                width: 100%;
+            }
+        }
+        &::before{
+            content: "";
+            background-color: rgb(145, 118, 30);
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            left: -20px;
+            top: -20px;
+            z-index: -1;
+        }
+        i{
+            border: 1px solid #fff;
+            height: 55px;
+            width: 55px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 100%;
+            color: #fff;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%,-50%);
+            cursor: pointer;
+            transition: all .3s;
+            &:hover{
+                background: #d4c291;
+            }
+        }
+    }
+    .aboutContent{
+        margin: 0px 20px 5px 20px;
+        position: relative;
+        span{
+            font-size: 16px;
+            color: rgb(145, 118, 30);
+            display: block;
+        }
+        h2{
+            margin-bottom: 10px;
+            font-family: 'Gill Sans';
+            font-size: 40px;
+        }
+        p{
+            margin-bottom: 30px;
+            font-family: 'Gill Sans';
+            font-size: 15px;
+            @media (max-width:1200px) {
+                font-size: 14px;
+                margin-bottom: 20px;
+            }
+        }
+        .signature{
+            margin-top: 35px;
+        }
+    }
+}

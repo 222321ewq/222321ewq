@@ -1,0 +1,84 @@
+.PremisesLiabilityContentArea{
+    .singleContentImg{
+        margin-bottom: 50px;
+        img{
+            width: 100%;
+        }
+    }
+    .singleContentWrap{
+        h3{
+            font-size: 36px;
+            margin-bottom: 25px;
+            font-family: 'Gill Sans';
+        }
+        h5{
+            font-size: 22px;
+            font-family: 'Gill Sans';
+            line-height: 40px;
+            margin-bottom: 20px;
+            @media (max-width:576px) {
+                line-height: 30px;
+                font-size: 18px;
+            }
+        }
+        h6{
+            font-size: 20px;
+            margin-bottom: 15px;
+            font-family: 'Gill Sans';
+        }
+        p{
+            font-size: 16px;
+            line-height: 30px;
+            margin-bottom: 35px;
+            font-family: 'Gill Sans';
+            @media (max-width:576px) {
+                font-size: 14px;
+                font-family: 'Gill Sans';
+            }
+        }
+        .avatarWrap{
+            margin-top: 15px;
+            img{
+                width: 100%;
+                @media (max-width:2048px) {
+                    margin-bottom: 30px;
+                }
+                @media (max-width:1024px) {
+                    margin-bottom: 30px;
+                }
+                @media (max-width:767px) {
+                    height: 100%;
+                    width: 40%;
+                    margin-bottom: 30px;
+                }
+                @media (max-width:576px) {
+                    height: 100%;
+                    width: 40%;
+                    margin-bottom: 30px;
+                }
+                
+            }
+            h4{
+                font-size: 24px;
+                margin-bottom: 20px;
+                font-family: 'Gill Sans';
+            }
+            ul{
+                li{
+                    font-size: 15px;
+                    font-family: 'Gill Sans';
+                    margin-bottom: 10px;
+                    &::before{
+                        content: "\f046";
+                        margin-right: 15px;
+                        font-family: 'fontawesome';
+                        color: rgb(145, 118, 30)
+                    }
+                    &:last-child{
+                        margin-bottom: 0;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,89 @@
+.footerArea{
+    background: black;
+    .footerTopArea{
+        padding: 60px 0px 70px;
+        .footerLogo{
+            margin-bottom: 20px;
+            a{
+                display: inline-block;
+                margin-bottom: 10px;
+                img{
+                    height: 25px;
+                }
+            }
+            p{
+                font-size: 13px;
+                font-family: 'Gill Sans';
+                color: #ddd;
+            }
+        }
+        .footerWrap{
+            margin-bottom: 10px;
+            h3{
+                font-size: 28px;
+                color: #fff;
+                margin-bottom: 30px;
+                font-family: 'Gill Sans';
+                @media (max-width:767px) {
+                    font-size: 24px;
+                    font-family: 'Gill Sans';
+                }
+            }
+            ul{
+                li{
+                    margin-bottom: 10px;
+                    color: #ddd;
+                    font-size: 13px;
+                    font-family: 'Gill Sans';
+                    &:last-child{
+                        margin-bottom: 0;
+                        font-family: 'Gill Sans';
+                    }
+                    a{
+                        color: #ddd;
+                        display: inline-block;
+                        font-family: 'Gill Sans';
+                        &:hover{
+                            color: rgb(145, 118, 30);
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .footerBottomArea{
+        .footerBottomContent{
+            border-top: 1px solid white;
+            padding: 30px 0;
+            @media (max-width:375px) {
+                text-align: center;
+            }
+            span{
+                display: block;
+                color: #ddd;
+                font-size: 16px;
+                font-family: 'Gill Sans';
+                @media (max-width:576px) {
+                    font-size: 14px;
+                }
+            }
+            .socialListFooter{
+                justify-content: flex-end;
+                display: flex;
+                @media (max-width:375px) {
+                    justify-content: center;
+                    margin-top: 15px;
+                }
+                li{
+                    margin-left: 15px;
+                    a{
+                        color: #ddd;
+                        &:hover{
+                            color: rgb(145, 118, 30);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

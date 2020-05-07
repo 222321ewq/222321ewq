@@ -1,0 +1,23 @@
+1)backend envia pra mim 
+-um array de numeros de processos(com ultima audiencia(data e nome), e ultima movimentação(data e nome)), 
+-cpf, 
+-senha do tjsp
+
+2)eu faço login com pyppeteer, e pra cada processo verifica se tem movimentação ou audiencia nova e no final
+devolve um array de processos com as moviementações e audiencias que precisam ser atualizadas
+
+
+Passo a Passo
+- recebe processos do backend
+- entra no site, pega todos os numeros de processo do advogado
+- verifica se algum dos processos foi pego do site e não esta na lista recebida do backend
+    - se estiver na lista do backend: verifica se precisa atualizar as movimentacoes e audiencias
+        - se precisa atualizar movimentacao ou audiencia: pega as novas movimentacoes ou audiencias e coloca status = 'update'
+        - se nao precisa atualizar pula pro proximo processo
+    - se nao esta na lista do backend: pega todas as informações do processo e coloca status = 'insert'
+
+- envia pro backend a lista de processos com o id do advogado
+
+
+TODO:
+- Tratar a excessao do processo 0000517-92.2017.8.26.0621

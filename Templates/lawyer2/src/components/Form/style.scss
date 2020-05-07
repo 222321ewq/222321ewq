@@ -1,0 +1,61 @@
+.contactForm{
+    .formInput{
+        margin-bottom: 30px;
+        input,
+        textarea,
+        select{
+            background: white;
+            font-family: 'Gill Sans';
+            height: 50px;
+            padding: 6px 15px;
+            color: black;
+            border-radius: 0;
+            -webkit-box-shadow: none;
+            box-shadow: none;
+            border: 1px solid grey;
+            &:focus{
+                -webkit-box-shadow: none;
+                box-shadow: none;
+                border-color: white;
+                font-size: 14px;
+            }
+            &::-webkit-input-placeholder{
+                color: black;
+                font-size: 14px;
+            }
+        }
+        select{
+            color: black;
+            position: relative;
+            -webkit-appearance: none;
+            -ms-appearance: none;
+            -o-appearance: none;
+            appearance: none;
+            -moz-appearance: none;
+            background: #cfcece url(../../images/select-icon.png) no-repeat calc(100% - 15px) center;
+        }
+        textarea{
+            height: 150px;
+            padding: 15px;
+        }
+        p{
+            font-size: 12px;
+            color: white;
+        }
+    }
+    
+    button{
+        font-size: 15px;
+        font-weight: 700;
+        color: #fff;
+        padding: 9px 25px;
+        border: 2px solid transparent;
+        text-transform: capitalize;
+        display: inline-block;
+        transition: all .3s;
+        background: rgb(145, 118, 30);
+        &:hover{
+            background:#d4c291;
+        }
+    }
+}
